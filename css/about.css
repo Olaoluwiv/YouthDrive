@@ -1,0 +1,69 @@
+/* the container that hold the home abiut*/
+.container{
+        
+    display: flex;
+    justify-content: center;
+}
+/* the container that hold the image*/
+.container img{
+    height: 15%;
+    width: 15%;
+    padding-bottom: 20%%;
+
+}
+/* Home Background*/
+h1{
+font-size: 50px;
+}
+p{
+font-size: 20px;
+font-weight: 10px;
+color: black;
+
+}
+/* center background*/
+
+.green{
+font-size: 30px;
+background-color: silver;
+color: green;
+font-weight: 10px;
+border width: 2px;
+border style:solid;
+margin: 20px;
+line-height: 70px;
+text-decoration:underline;
+padding-bottom: 10px;
+padding-left: 20px;
+
+}
+
+
+
+
+/* Header background*/
+.header-left{
+border:1px solid black;
+width: 100%;
+height: 70px;
+background-color: black;  
+}
+
+.header-left a {
+padding: 16px 20px 3px 20px;
+font-weight: bold;
+color: white;
+font-size: 25px;
+border: 50px;
+text-decoration: none;
+margin-left: 40px;
+}
+
+/* the holver gives underline background to Home About*/
+a:hover{
+background-color: none;
+text-decoration: underline;
+}
+p::first-letter{
+    font-size: 40px;
+}
