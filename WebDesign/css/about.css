@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    max-width: 120rem;
+    font-size: 1rem;
+}
+body{
+    font-size: 1rem;
+}
+nav{
+    min-height: 5vh;
+    background-color: black;
+    color: white;
+    padding:0.5rem 2rem;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 13rem;
+}
+nav ul{
+    text-align: center;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: center;
+        color:brown;
+        margin: 2rem;
+    }
+    p{
+        font 
+    }
+    h3{
+        font: size 3rem;
+    }
+    li{
+        font-size: 30px;
+        color:black;
+    }
+    ul {
+        font-size:20px
+    }
