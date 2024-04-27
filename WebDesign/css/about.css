@@ -18,10 +18,12 @@ nav{
 }
 nav ul li{
     display: inline-block;
-    margin-right: 13rem;
+    margin-right: 13rem; /* Adjust spacing between menu items */
 }
 nav ul{
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 nav a{
     color: white;
@@ -37,15 +39,18 @@ nav a:hover{
         margin: 2rem;
     }
     p{
-        font 
+        font-size: 1.5rem; /* Specify the font size */
+        margin: 0; /* Center paragraph */
+        max-width: 90%; /* Limit paragraph width */
     }
     h3{
-        font: size 3rem;
+        font: size 3rem; /* Correct the font-size syntax */
     }
     li{
-        font-size: 30px;
+        font-size: 1.5rem; /* Specify the font size */
+
         color:black;
     }
     ul {
-        font-size:20px
+        font-size: 1.2rem; /* Specify the font size using relative units */
     }

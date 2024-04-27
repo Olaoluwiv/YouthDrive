@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    max-width: 120rem;
+    max-width: 120rem;    /*for Desktop computer*/
     font-size: 1rem;
 }
 body{
@@ -15,13 +15,16 @@ nav{
     background-color: black;
     color: white;
     padding:0.5rem 2rem;
+    font-size: 35px;
 }
 nav ul li{
     display: inline-block;
-    margin-right: 10em;
+    margin-right: 20rem; /*adjust spacing between menu items*/
 }
 nav ul{
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 nav a{
     color: white;
@@ -34,9 +37,6 @@ main{
     max-width: 95%;
     min-height: 65vh;
     margin: 0.2rem auto;
-    /*
-    border: 1px solid blue;
-    */
 }
 
 h1{
@@ -46,7 +46,8 @@ h1{
 }
 p{
     font-size: 1.5em;
-    margin-left: 15%;
+    margin-left: 15%; /*center paragraph*/
+    max-width: 90%; /*lomit paragraph width*/
 }
 
 footer{
@@ -58,66 +59,39 @@ ol {
 }
 
 ol li {display: inline-block;
-    width: 250px;
-    height: 200px;
-    border: 1px solid white;
-    @media screen and (max-width:600px){
-        ol li {
-            display: block;
-            width:90%;
-            margin: auto;
+    width: calc(25%-1em); /*Adjust width to fit foor items per role */
+    margin-right: 1em;
+    margin-bottom: 1em;/*Adjust space between roles*/
+}
+    @media screen and (max-width:768px){    /*Tablet size*/
+            /* Adjust styles for tablets and smaller devices */
+            nav ul li{
+                margin-right: 0.5em; /*Reduce margin between menu items*/
+                h1 {
+                    font-size: 2.5rem; /* Decrease font size */
+                }
+            
+                p {
+                    font-size: 1.2em; /* Decrease font size */
+                }
 
-        }
+            }
+
+        ol li {
+            width: calc(50% - 1em); /* Adjust width to fit two items per row */
     }
 }
-.inline span{
-    display: block;
-}
-/*
-nav ul{
-    width: 100%;
-    height: 1.5em;
-    border: 1px solid black;
-    font-size: 30px;
-    background-color: black;
 
-}
-nav{
-    min-height: 5vh;
+@media screen and (max-width: 600px) {    /* for smartphone*/
+    /* Adjust styles for smartphones */
 
-}
-li a{
-    color: white;
-}
+    nav ul li {
+        display: block; /* Convert menu items to block for vertical stacking */
+        margin-right: 0; /* Remove margin between menu items */
+    }
 
-ul li{
-    display: inline;
-    margin-right: 5em;
-    text-align: center;
-}
-a:hover{
-    text-decoration: underline;
-}
-nav ul li a {
-    text-decoration: none;
-}
-h1{
-    font-size: 3rem;
-    text-align: center;
-    color:brown;
-}
-main .inline{
-    font-size: 1.8rem;
-    
-}
-section ol li{
-    display: inline-block;
-    width: 200px;
-    margin-right: 20px;
-    height: 50px;
-
-
-}
-html{
-    font-size: 2rem;
+    ol li {
+        width: 90%; /* Adjust width to fit one item per row */
+        margin: 0 auto 1em; /* Center and add space between rows */
+    }
 }
