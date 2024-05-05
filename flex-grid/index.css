@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+
+}
+html {
+    max-width: 120rem;
+    font-size: 1rem; /* Default font size for 1rem */
+}
+.section2{
+    max-width: 120rem; /* Full width of the viewport */
+     height: auto; /* Let height be determined by content */
+    border: 1px solid red;
+    background-image: url('../section2.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 65% 100%;
+    background-color: #d7d7d7;
+ }
+.section2 ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+ /* border: 1px solid red;*/
+   list-style-type: none;
+   font-size: 1.5rem;
+   padding-left: 15vw;
+   margin-top: 2.5rem;
+
+ }
+ .section2 ul li{
+    margin-bottom: 1rem;
+ }
+ .section2 ul li a{
+    color: #fff;
+    text-decoration: none;
+ }
+ .section2 .group{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    
+ }
+ .section2 .group a{
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.0825rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    max-width: 9.1875rem;
+    height: 2.875rem;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+#contact a{
+    text-wrap: nowrap;
+    color: #000;
+    text-align: center;
+    font-family: montserrat;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 1.975rem;
+    border: 4px solid #fff;
+    background: #fff;
+    padding: 0.8rem 1.5vw;
+    margin-left: 80px;
+  
+}
+nav .group a.CONTACTME{
+    border-radius: 1.875rem;
+    border: 4px solid #fff;
+    background-color:  #fff;
+    color: #000;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section2 .logo-mobile {
+    display: flex;
+}
+
+@media screen and (max-width: 1055px) {
+    .section2 {
+        background-image: unset;
+    }
+     /* Additional Mobile Styles for specific elements */
+     .section2 .logo-desktop {
+        display: none; /* Hide desktop logo on mobile */
+    }
+
+}
+/* Media Query for Mobile Devices */
+@media screen and (max-width: 740px) {
+    .section2 nav {
+        height: 3.5625rem;
+        background-color: black;
+        margin-top: unset;
+        padding-left: 1.88rem;
+    }
+     
+
+    .section2 .logo-mobile {
+        display: none;
+    }
+    .section2 .menu {
+        display: none;
+    }
+    .section2 .logo-desktop {
+        display: none;
+    }
+    .section2 .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Styles for desktop view */
+@media screen and (min-width: 741px) {
+    .section2 .logo-mobile {
+        display: none; /* Hide the mobile logo on desktop */
+    }
+}
+
+/* Styles for mobile view */
+@media screen and (max-width: 740px) {
+    .section2 .logo-desktop {
+        display: none; /* Hide the desktop logo on mobile */
+    }
+}
+@media screen and (max-width:740px) {
+    .section2 nav{
+        height: 3.5625rem;
+        background-color: black;
+        margin-top: unset;
+        padding-left: 1.88rem;
+    }
+    }
+.section2 ul{
+   height: inherit;
+   display: flex;
+   justify-content: space-between;
+   padding-left: 15vw;
+}
+.section2 .line1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        grid-auto-rows: minmax(34rem, auto);
+        margin-top: 2.13rem;
+}
+.section2 .boxa{
+    /*
+    border: 1px solid red;
+    */
+    padding-left: 15vw;
+}
+.section2 .text-desktop.one{
+    color: #000;
+    text-align: left;
+    font-family: raleway;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 8.87rem;
+}
+.section2 .text-desktop p.two{
+    color: #000;
+    text-align: left;
+    font-family: raleway;
+    font-size: 3.8vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-wrap: nowrap;
+    margin-top: 3.38rem;
+    padding-right: 8.5rem;
+}
+.section2 .text-desktop p.three{
+    color: #909090;
+    text-align: left;
+    font-family: raleway;
+    font-size: 1.1625rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-wrap: nowrap;
+}
+.section2 .menu{
+    display: flex;
+    padding-top: 15.27rem;
+    margin-right: 20rem;
+
+}
+.section2 .image{
+    display: flex;
+    padding-bottom: 1.27rem;
+    order: 5;
+
+
+}
+.section2 .ul .image{
+    margin-top: unset;
+
+}
+.section2 .icons .i{
+    background-color: unset;
+    box-shadow: unset; 
+    display: flex;
+}
+.section2 .boxa .icons{
+    justify-content: center;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+.section2 .boxa .icons1{
+    background-image: url("./github.svg");
+}.section2 .boxa .icons2{
+    background-image: url("./twitter.svg");
+}
+.section2 .boxa .icons3{
+    background-image: url("./linkedin-mobile.svg");
+}
+.section2 .boxa .icons{
+    margin-top: 13.88rem;
+    display: flex;
+    align-items: center;
+    gap: 0.94rem;
+}
+.section2 .icons .i{
+    width: 2.8125rem;
+    height: 2.5rem;
+    background: #c4c4c4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, o, 25);
+    /*
+    border: 1px solid red;
+    */
+}
+    .section2 .boxa .icons1{
+        background-image: url("./twitter.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+    .section2 .boxa .icons2{
+        background-image: url("github.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+    .section2 .boxa .icons3{
+        background-image: url("./linkedin.svg");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+    .section2 .boxb{
+        display: none;
+    }
+    .section2 .boxb .text{
+        position: absolute;
+        bottom: 0rem;
+        left: calc(100/2-8.5rem);
+        width: 8.5rem;
+        height: 3.75rem;
+        color: #000;
+        text-align: justify;
+        font-family: Roboto;
+        font-size: 0.9375rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        background-color: transparent;
+
+    }
+    .section2 .boxb{
+        border: 1px solid red;
+        background-image: url("./image.svg");
+        background-position: left;
+        background-size: 75% 100%;
+        position: relative;
+    } 
