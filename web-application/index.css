@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #6A1039;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    width: 22%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.header {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.menu li {
+    margin: 15px 0;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;   
+    justify-content: center;
+}
+.menu a:hover {
+    background-color: #ddd;
+}
+
+#employees-menu,
+#employee-submenu .submenu-item[data-content="all-employees"] {
+    color:#6A1039 ; /* Apply red color to Employees menu item and All Employees submenu item */
+}
+
+.submenu {
+    display: none;
+    padding-left: 18px;
+}
+
+#content {
+    margin-left: 28%;
+    width: 80%;
+    padding: 20px;
+    text-align: left;
+    overflow-y: auto;
+    background: #6A1039; /* Ensure the employee screen background is white */
+    color: #000;
+}
+
+h1 {
+    min-height: 3vh;
+    margin: 8px auto;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    background: #6A1039;
+}
+
+h2 {
+    text-align: center;
+    color: #f0f0f0;
+    background: black;
+    padding:px5;
+}
+p{
+    color: white;
+}
+
+html {
+    font-size: 1rem;
+    background-color: #6A1039;
+    width: 100%;
+}
+
+.main-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 8px;
+    font-family: 'Avenir', sans-serif;
+    letter-spacing: 0.02rem;
+}
+li a{
+    margin-left: 5em;
+    text-align: center;
+    top: 50%;
+}
+
+.status {
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.active {
+    background-color: #6fa86f; /* Dull green */
+}
+
+.inactive {
+    background-color: #cc7a7a; /* Dull red */
+}
+
+.employee-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white; /* Ensuring the table background is white */
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    background: whitesmoke;
+    border-radius: 50px;
+}
+
+th, td {
+    padding: 0.5px;
+    text-align: left;
+}
+thead, tr{
+    max-width: 25rem;
+    padding-top: 15rem;
+}
+tbody tr{
+    padding-bottom: 60px;
+
+}
