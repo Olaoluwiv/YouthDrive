@@ -11,6 +11,7 @@ body {
     display: flex;
     width: 100%;
 }
+
 .sidebar {
     width: 22%;
     background-color: #f0f0f0;
@@ -37,19 +38,21 @@ body {
 .menu li {
     margin: 15px 0;
 }
+
 .menu a {
     text-decoration: none;
     color: black;
-    font-weight: bold;   
+    font-weight: bold;
     justify-content: center;
 }
+
 .menu a:hover {
     background-color: #ddd;
 }
 
-#employees-menu,
-#employee-submenu .submenu-item[data-content="all-employees"] {
-    color:#6A1039 ; /* Apply red color to Employees menu item and All Employees submenu item */
+.menu a.active {
+    background-color: #6A1039;
+    color: white;
 }
 
 .submenu {
@@ -59,11 +62,11 @@ body {
 
 #content {
     margin-left: 28%;
-    width: 80%;
+    width: 70%;
     padding: 20px;
     text-align: left;
     overflow-y: auto;
-    background: #6A1039; /* Ensure the employee screen background is white */
+    background: #6A1039;
     color: #000;
 }
 
@@ -81,9 +84,10 @@ h2 {
     text-align: center;
     color: #f0f0f0;
     background: black;
-    padding:px5;
+    padding: 5px;
 }
-p{
+
+p {
     color: white;
 }
 
@@ -102,7 +106,8 @@ html {
     font-family: 'Avenir', sans-serif;
     letter-spacing: 0.02rem;
 }
-li a{
+
+li a {
     margin-left: 5em;
     text-align: center;
     top: 50%;
@@ -118,11 +123,11 @@ li a{
 }
 
 .active {
-    background-color: #6fa86f; /* Dull green */
+    background-color: #6fa86f;
 }
 
 .inactive {
-    background-color: #cc7a7a; /* Dull red */
+    background-color: #cc7a7a;
 }
 
 .employee-img {
@@ -136,24 +141,107 @@ li a{
 table {
     width: 100%;
     border-collapse: collapse;
-    background-color: white; /* Ensuring the table background is white */
+    background-color: white;
 }
 
 table, th, td {
     border: 1px solid #ddd;
     background: whitesmoke;
-    border-radius: 50px;
 }
 
 th, td {
-    padding: 0.5px;
+    padding: 8px;
     text-align: left;
 }
-thead, tr{
-    max-width: 25rem;
-    padding-top: 15rem;
-}
-tbody tr{
-    padding-bottom: 60px;
 
+thead, tr {
+    max-width: 25rem;
+}
+
+tbody tr {
+    padding-bottom: 60px;
+}
+
+form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+form input, form select, form button {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #6A1039;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+.role-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line if needed */
+    gap: 10px; /* Adjust the gap between items */
+    padding: 0; /* Remove default padding */
+    list-style: none; /* Remove default list styles */
+    font-size: 0.7rem;
+}
+.role-list li {
+    background-color: #6A1039; /* Example background color */
+    padding: 10px; /* Example padding */
+    color: #ddd;
+}
+#class {
+    background-color: #6A1039; /* Example background color */
+    color: white;
+    font-size:15px;
+    list-style: none;
+}
+#class ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+#class ul li {
+    padding: 10px;
+}
+#class ul li:hover {
+    background-color: #d0d0d0;
+}
+#employees-menu,
+#employee-submenu .submenu-item[data-content="all-employees"] {
+    color:#6A1039 ;
+}
+#Rolls-submenu .submenu-item[data-content="all-Roles"] {
+    color:#6A1039 ; 
 }

@@ -20,6 +20,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+    menuItems.forEach(item => {
+        item.addEventListener("click", function(event) {
+            event.preventDefault();
+            const content = item.getAttribute("data-content");
+            updateContent(content);
+        });
+    });
+
     function updateContent(content) {
         let html = '';
 
@@ -28,7 +36,26 @@ document.addEventListener("DOMContentLoaded", function() {
                 html = '<h2>Dashboard</h2><p>Dashboard content goes here...</p>';
                 break;
             case 'roles':
-                html = '<h2>Roles</h2><p>Roles content goes here...</p>';
+                html = `
+                    <h2>Roles</h2>
+                    <div id="class">
+                        <ul>
+                            <li>All Roles</li>
+                            <li>Permissions</li>
+                        </ul>
+                    </div>
+                    <p>Search Roles by Title, Teams, or any related keyword</p>
+                    <input type="search" placeholder="Search Roles by Title, Teams, or any related keyword">
+                    <ul class="role-list">
+                        <li>All</li>
+                        <li>Product</li>
+                        <li>Engineering</li>
+                        <li>Marketing</li>
+                        <li>Recruitment</li>
+                        <li>Sales</li>
+                        <li>Customer Service</li>
+                    </ul>
+                `;
                 break;
             case 'all-employees':
                 html = `
@@ -60,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <td>Product Design</td>
                             </tr>
                             <tr>
-                                <td><img src="path/to/image3.jpg" alt="Tassy Omah" class="employee-img"> Tassy Omah<br><a href="mailto:tassyomah@gmail.com">tassyomah@gmail.com</a></td>
+                                <td><img src="path/to/image3.jpg" alt="Tassy Omah" class="employee-img"> Tassy Omah<br><a href="mailto:Tessyomah@gmail.com">tassyomah@gmail.com</a></td>
                                 <td>#23454GH6J7YT6</td>
                                 <td>Product Design</td>
                                 <td><button class="status active">Active</button></td>
@@ -95,9 +122,9 @@ document.addEventListener("DOMContentLoaded", function() {
                                 <td>Product Design</td>
                             </tr>
                             <tr>
-                                <td><img src="../image/olami.jpg" alt="Tanner Fisher" class="employee-img"> Tanner Fisher<br><a href="mailto:Tannerfisher@gmail.com">Tannerfisher@gmail.com</a></td>
+                                <td><img src="path/to/image8.jpg" alt="Tanner Fisher" class="employee-img"> Tanner Fisher<br><a href="mailto:Tannerfisher@gmail.com">Tannerfisher@gmail.com</a></td>
                                 <td>#23454GH6J7YT6</td>
-                                <td>Product Design <br> full time</td>
+                                <td>Product Design</td>
                                 <td><button class="status active">Active</button></td>
                                 <td>Marketing Design</td>
                             </tr>
