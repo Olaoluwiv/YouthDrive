@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.browse-the-range {
+  padding: 1rem;
+}
+
+.rangeImage {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
